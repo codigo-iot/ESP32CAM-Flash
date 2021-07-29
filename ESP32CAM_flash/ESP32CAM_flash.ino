@@ -4,11 +4,12 @@
 //Creditos Moayom
 //
 //Este es el programa básico para controlar el
-//LED Flash del ESP32CAM. Este programa parte del
-//hecho de que cuentas con la base programadora.
+//LED Flash del ESP32CAM. El led flash parpadea
+//cada 500 ms.
+
 
 //Definición de pines
-#define LAMP 4 //Se selecciona 
+#define LAMP 4 //Se selecciona el pin donde se encuentra el led flash
 
 //Inicialización del programa
 void setup() //Estructura principal
@@ -20,7 +21,7 @@ void setup() //Estructura principal
 void loop() //Función bucle
 {
   digitalWrite (FLASH, HIGH); //Encender led. 2 parámetros, pin a controlar, estado (0,LOW,FALSE,1,HIGH,TRUE)
-  delay (2000); //Espera de 2 segundos
+  delay (500); //Espera de 2 segundos
   digitalWrite (FLASH, LOW); //Apagar led
-  delay (2000); //Espera de 2 segundos
+  delay (500); //Espera de 2 segundos
 } //Fin de void loop()
